@@ -8,12 +8,9 @@
             var loopedTemplate = template;
             for(propertyName in elem){
                 loopedTemplate = loopedTemplate.replace(new RegExp('{{'+propertyName+'}}','g'),elem[propertyName]);
-
             }
             loopedTemplatedText += loopedTemplate;
         }
         return $(loopedTemplatedText);
-
     };
-
 })( jQuery, window, document );
